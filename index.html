@@ -142,6 +142,168 @@
                 <li>Monitor <br>Pada tahapan ini peneliti melakukan pengawasan atau mengontrol penggunaan aplikasi pada toko buku muslimsunnah.id</li>
                 <li>Release <br>Pada tahapan ini melakukan publikasi awal pada toko buku muslimsunnah.id dengan tujuan agar dapat di akses secara luas.</li>
             </ol>
+            <h1>BAB IV <br>  HASIL DAN PEMBAHASAN</h1>
+            <h2>A.	Development</h2>
+            <h3>a.	Plan</h3>
+            <p style="text-align: justify; text-indent: 0.5in;">Plan digunakan untuk menjelaskan perancangan siapa saja yang akan menjadi pengguna sistem beserta tugas dan tujuannya. Hal ini sangat penting karena daftar dari plan tersebut akan digunakan untuk proses pengembangan sistem selanjutnya. Berikut adalah daftar plan yang berhasil dikumpulkan.</p>
+            <h4>1. Plan System</h4>
+            <h5>1.1.	Kebutuhan Fungsional</h5>
+            <p>Analisa kebutuhan bertujuan mengetahui kebutuhan-kebutuhan yang nantinya akan digunakan untuk pengguna aplikasi, yaitu :</p>
+            <ol type="1"> 
+                <li>Admin</li>
+                    <a>•    Admin harus melakukan login menggunakan username dan password yang sudah tervalidasi. </a> <br>
+                    <a>•	Admin dapat mengakses data yang berkaitan dengan : 
+                        <dd>	Data buku  <br>
+                            	Data customer <br>
+                            	Data kategori <br>
+                            	Data penerbit <br>
+                            	Data pengarang <br>
+                            	Data transaksi <br>
+                            	Data user <br>
+                        </dd>
+                    </a>
+                    <a> bisa logout setelah selesai mengakses website </a>
+                <li>Customer / pembeli </li>
+                    <a>•	Customer dapat melakukan login dengan mennggunakan  username dan password jika sudah memiliki akun atau bisa melakukan registrasi terlebih dahulu.</a> <br>
+                    <a>•	Castemer bisa mengakses, diantaranya adalah :
+                        <dd>	Melihat buku <br>
+                            	Menambahkan buku ke dalam keranjang penjualan <br>
+                            	Melakukan pembelian <br>
+                            	Melakukan transaksi <br>
+                            	Melihat data pembelin <br>
+                            </dd>
+                    </a>
+                    <a>•	Customer bisa melakukan logout setelah selesai mengakses website </a>
+            </ol>
+            <h5>1.2.	Kebutuhan Non Fungsional</h5>
+            <ol type="1">
+                <li>Analisa Kebutuhan Hardware</li>
+                <p>Kebutuhan Spesifikasi PC (Personal Computer) yang digunakan yaitu :</p>
+                    <dd>	Processor minimal Core i32.0 GHz <br>
+                        	RAM 6 GB <br>
+                        	VGA NVDIA GeForce 930MX  <br>
+                        	Harddisk minimaal 500 GB
+                    </dd>
+                <li>Analisa Kebutuhan Software</li>
+                <p>Software yang digunakan adalah sebagai berikut : </p>
+                    <dd>	Web <br>
+                        	Sistem Operasi Microsoft Windows 10 / linux / mac os <br>
+                        	Data Base MySql
+                    </dd>
+            </ol>
+            <h4>2.	Plan Estimasi Waktu </h4>
+            <p style="text-align: justify; text-indent: 0.5in;">Berikut adalah plan estimasi waktu pengerjaan yang di rangkum pada bentuk table:</p>
+            <img src="https://drive.google.com/uc?id=1myu3_PTXgX-71Qh-X7geFTQPKg1btp5n" alt="" style="height: auto;"><br>
+            <img src="https://drive.google.com/uc?id=1wwpgONyMu45RcGtmRakDIBXhS75-28Wt" alt="" style="height: auto;">
+            <h4>3 Plan Design </h4>
+        <h5>3.1.	Design Sistem </h5>
+        <p style="text-align: justify; text-indent: 0.5in;">Berikutnya dirancanglah sistem informasi menggunakan DFD (Data Flow Diagram) yang merupakan salah satu teknik pemodelan desain sistem berbasis web. Pemodelan ini menjadi bagian penting dalam pengembangan sistem karena menjadi satu satunya cara untuk memvisualisasikan desain sistem dan memeriksa apakah sudah memenuhi standar yang diinginkan sebelum memulai coding. Beberapa jenis Diagram yang dibuat antara lain yaitu Diagram koneks, DFD dan ERD.</p>
+        <ol type="a">
+            <li>Diagram Konteks <br><img src="https://drive.google.com/uc?id=1IyEdHOr8knOPfhWA4jjgvZWCAD3akB9W" alt="" style="width: auto; height: auto;"></li>
+            <li>Data Flow Diagram</li>
+            <ul>
+                <li>Diagram Berjenjang <br><img src="https://drive.google.com/uc?id=1iyA-fHCzqo2YQ6nEviuXOjHRY3A7Aeu4" alt="" style="width: auto;"></li>
+                <li>diagram level 1 <br><img src="https://drive.google.com/uc?id=1qUnZaCGt9FdHyr_jNNQwV23vDgJ37egY" alt="" style="height: auto;"></li>
+                <li>diagram level 1.2 <br><img src="https://drive.google.com/uc?id=1mKl4eyKxgIXSB3QAbceagAbnzARutj7k" alt="" style="height: auto;"></li>
+                <li>Diagram level 2 <br> <img src="https://drive.google.com/uc?id=1dElFSC0eQlxqYvgUzXY9p2rbKlS3hLl5" alt="" style="height: auto;"></li>
+            </ul>
+            <li>Entity Releationship Diagram <br><img src="https://drive.google.com/uc?id=1miJoErwSuA1wzdXSiyDbQ6q3rFktVN1q" alt="" style="height: auto;"></li>
+            <li>Perancangan Database<br><img src="https://drive.google.com/uc?id=1mKpTNWuh0zKlfahdCEozM3iuth-neoSJ" alt="" style="height: auto;"></li>
+            <ul>
+                <li>Buku <br>
+                    Primary key	: id_buku <br>
+                    Jumlah field	: 11<br>
+                    <img src="https://drive.google.com/uc?id=1pT9iq0QaBkF-HY8Db9auM5LgogzznC7N" alt="buku" style="height: auto;"></li>
+                <li>Custumer <br>
+                    Primary key 	: id_custumer <br>
+                    Jumlah field	: 7<br>
+                    <img src="https://drive.google.com/uc?id=1mxXgRzvba1-yPjbdhihcexy_hb99V0dX" alt="Custumer" style="height: auto;"></li>
+                <li>Ketrgory<br>
+                    Primary key 	: id_kategori<br>
+                    Jumlah field 	: 3<br>
+                    <img src="https://drive.google.com/uc?id=1zKMJPIdEEF74tY6ul8xCysfEu5gNNrzE" alt="Ketrgory" style="height: auto;">
+                    </li>
+                <li>Penerbit <br>
+                    Primary key 	: id_penerbit <br>
+                    Jumlah field 	: 6<br>
+                    <img src="https://drive.google.com/uc?id=1wcLFZGKJ9qGdX-aOBJofeyLNVfg3CtUM" alt="Penerbit" style="height: auto;">
+                    </li>
+                <li>User <br>
+                    Primary key 	: (none)<br>
+                    Jumlah field 	: 5<br>
+                    <img src="https://drive.google.com/uc?id=155gwlBcNM_a24SZoeUP7U9v2LC9wOdVk" alt="User" style="height: auto;">
+                    </li>
+                <li>Pengarang <br>
+                    Primary key 	: id_pengarang <br>
+                    Jumlah field	: 6<br>
+                    <img src="https://drive.google.com/uc?id=1SkppKJm3QjwunFJdfg83cDIpq41kXy1m" alt="Pengarang" style="height: auto;">
+                    </li>
+                <li>Pemesanan <br>
+                    Primary key 	: (none) <br>
+                    Jumlah field 	: 6 <br>
+                    <img src="https://drive.google.com/uc?id=13elEz0Yi2pWN4yNwj314Hov85kBEQmcE" alt="" style="height: auto;">
+                </li>
+                <li>Pembayaran <br>
+                    Primary key 	: (none) <br>
+                    Jumlah field 	: 6 <br>
+                    <img src="https://drive.google.com/uc?id=1eM-MPucM2VgB_sYioGfSdL7JpaRdiDB0" alt="" style="height: auto;">
+                    </li>
+            </ul>
+        </ol>
+
+        <h3>3.3. Desaign UI</h3>
+            <p>
+                Login 
+            </p>
+            <img src="https://drive.google.com/uc?id=1otA3bG22VkbIr-bd0qoGnQkk9smul8Wq" alt="login" style="height: auto;">
+            <p>
+                Registrasi
+            </p>
+            <img src="https://drive.google.com/uc?id=1Jdaxaasqr7NPMIeSfC3VKV3mZxUJ_u23" alt="Registrasi" style="height: auto;">
+            <p>
+                Dasbord Admin 
+            </p>
+            <img src="https://drive.google.com/uc?id=1ygB3203fJBQnVSeAa9GqOrWcEZNLPiod" alt="Dasbord Admin" style="height: auto;">
+            <p>
+                Data Buku 
+            </p>
+            <img src="https://drive.google.com/uc?id=1yC8OwpCoDcuxsV13ZdjjJe20EgyCFNYM" alt="data Buku" style="height: auto;">
+            <p>
+                Data Customer 
+            </p>
+            <img src="https://drive.google.com/uc?id=1_cDDrpxz05K0tGuxux606Nt1zMWUVdNa" alt="Data Customer" style="height: auto;">
+            <p>
+                Data Kategori 
+            </p>
+            <img src="https://drive.google.com/uc?id=1kT4Zbvm66jJUiiKeG9PhP4vKUWCScYOe" alt="Data Penerbit" style="height: auto;">
+            <p>
+                Data Penerbit 
+            </p>
+            <img src="https://drive.google.com/uc?id=1Eb50jOTohC9r3TO_sATM3VW8coUd2ctx" alt="Data Penerbit" style="height: auto;">
+            <p>
+                Data Pengarang
+            </p>
+            <img src="https://drive.google.com/uc?id=1wdWLBZ2LqSTwD1KSYusGVeBbO5odxkT3" alt="Data Pengarang" style="height: auto;">
+            <p>
+                Data Transaksi 
+            </p>
+            <img src="https://drive.google.com/uc?id=1e4avBi95SYnY79j49Ohk4tXCPsz__7Z9" alt="Data Transaksi" style="height: auto;">
+            <p>
+                Data User
+            </p>
+            <img src="https://drive.google.com/uc?id=1yVtS1Kzg0uYjcUd7EZWkAEf3xo8ZEZ10" alt="Data User" style="height: auto;">
+            <p>
+                Halaman Utama User 
+            </p>
+            <img src="https://drive.google.com/uc?id=1ZYil3Cl7tRvdeq2SGvKNrTvFV8IkQAEJ" alt="Halaman Utama" style="height: auto;">
+            <p>
+                Cart 
+            </p>
+            <img src="https://drive.google.com/uc?id=1MSum3VYKnADhcexef6csiDdi9TbOeyiw" alt="cart" style="height: auto;">
+            <p>
+                MY Order 
+            </p>
+            <img src="https://drive.google.com/uc?id=1P9BzHqmW_PvKsR9UVQLmrxnrGLwysMSM" alt="my order" style="height: auto;">
             
             <h1 style="font-size: 30px ;">BAB V<br>
                 IMPLEMENTASI</h1>
