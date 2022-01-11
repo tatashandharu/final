@@ -142,5 +142,125 @@
                 <li>Monitor <br>Pada tahapan ini peneliti melakukan pengawasan atau mengontrol penggunaan aplikasi pada toko buku muslimsunnah.id</li>
                 <li>Release <br>Pada tahapan ini melakukan publikasi awal pada toko buku muslimsunnah.id dengan tujuan agar dapat di akses secara luas.</li>
             </ol>
+            
+            <h1 style="font-size: 30px ;">BAB V<br>
+                IMPLEMENTASI</h1>
+                <p>
+                    Login <br>
+                    <img src="https://drive.google.com/uc?id=1pJX3uD-7YS6Lw9MPryqXH14kI_7P6gsh" alt="" style="height: auto;">
+                </p>
+                <p>
+                    Code <br>
+                    <img src="https://drive.google.com/uc?id=1jpb6Ye0GAn3a-o4Rj63Sq3PmkvevdVrZ" alt="" style="height: auto;">
+                </p>
+                <p>
+                    Penjelasan : ini adalah tampilan halaman login. Dan untuk memproses data/ mengecek apakah valid setelah login, bisa dilihat di form action process/ceklogin.php Dibagian div class wrap input untuk mengimput username dan password dan selain login , ada halaman register untuk membuat akun baru bagi customer yang belum mempunyai akun.
+                </p>
+                <p>
+                    register <br>
+                    <img src="https://drive.google.com/uc?id=1AiGiAN9MPdBg86Q-7Dnkuaz9V_kYG57h" alt="" style="height: auto;">
+                </p>
+                <p>
+                    code <br>
+                    <img src="https://drive.google.com/uc?id=1vRDHL80PZeCm8RYxElVtAVuUCBj31bH-" alt="" style="height: auto;">
+                </p>
+                <p>
+                    Penjelasan: ini adalah tampilan register untuk customer yang belum mempunyai akun, 	Customer 	menginput 	data 	seperti 	nama,jenis kelamin,alamat,email,telpon,username dan password dan setelah menginput akan di proses dibagian form action= process.
+                </p>
+                <p>
+                    my Order <br>
+                    <img src="https://drive.google.com/uc?id=1pzuBzmcK4b5lDPqmmUiy0N9Xs8tITmjI" alt="" style="height: auto;">
+                </p>
+                <p>
+                    Code <br>
+                    <img src="https://drive.google.com/uc?id=17ZPn69_Sh3kJIVk5l3Qx5WUHGPdow6m3" alt="" style="height: auto;">
+                </p>
+                <p>Penjelasan: ini adalah tampilan my order yaitu tampilan yang telah sukses berbelanja buku dan dijadikan laporan untuk dilihat customer. Kolom kolom yang dilihat oleh customer seperti id transaksi,judul buku, tanggal transaksi, jumlah, total. Dan "SELECT * from kategori order by nama_kategori"; Adalah memilih buku dari kategori yang mau di order </p>
+                <p>
+                    Cart <br>
+                    <img src="https://drive.google.com/uc?id=16hWf0sFEJV8bcE6SXFNoQzcXfv5IsnAf" alt="" style="height: auto;" >
+                </p>
+                <p>
+                    code <br>
+                    <img src="https://drive.google.com/uc?id=1NtoQu4sAPssbKEnJZXManem21tIuUhhS" alt="" style="height: auto;">
+                </p>
+                <p>Penjelasan = ini adalah tampilan untuk keranjang belanja yang terdiri beberapa kolom seperti No,Buku,Harga,Jumlah,Subharga dan session keranjang untuk subharga dari $id_buku di table data buku . $pecah = $ambil->fetch_assoc(); $subharga =$pecah["harga"]*$jumlah; $total += $subharga; Ini coding untuk penjumlahan checkoutnya </p>
+                <p>
+                    dashboard <br>
+                    <img src="https://drive.google.com/uc?id=1jqs2XU8_AXuHCvxmHEQ7-fhIOtR7OgGJ" alt="" style="height: auto;">
+                </p>
+                <p>
+                    Code <br>
+                    <img src="https://drive.google.com/uc?id=1T1X69l-UyG04AwO7tqbwQqlMGG5FUHdD" alt=""style="height: auto;">
+                </p>
+                <p>Penjelasan: ini adalah tampilan dashboard admin dan hanya bisa diakses admin Admin bisa menyimpan,menghapus,mengedit,menambah dan melihat data data buku,penerbit,pengarang,kategori,laporan,user,customer. Data – data tersebut akan bertambah di halaman halaman yang sudah ditentukan masing masing </p>
+                <p>
+                    Data Buku <br>
+                    <img src="https://drive.google.com/uc?id=1xsOxrgY_vfvrWgfgbdrwx89_Aj3MYww7" alt=""style="height: auto;">
+                </p>
+                <p>
+                    Code <br>
+                    <img src="https://drive.google.com/uc?id=1T1v35UQyhijU9vhua4Lj4x3zFyeuMkBu" alt=""style="height: auto;">
+                </p>
+                <p>Penjelasan = ini adalah tampilan untuk menambah data buku dibagian dashboard admin. Jika telah tertambah maka data tersebut diproses dibagian form_buku.php, data yang diinputkan yaitu Id_buku,judul_buku, pengarang, penerbit stok berat beserta gambar bukunya lalu data tersebut masuk ke database kecuali gambar buku.</p>
+                <p>
+                    Data Costumer <br>
+                    <img src="https://drive.google.com/uc?id=120okYlNTXfwtIrJ9_pJB5gkI-ezOh4we" alt=""style="height: auto;">
+                </p>
+                <p>
+                    Code <br>
+                    <img src="https://drive.google.com/uc?id=1VUqiWu6Y2ELBOGvwC4_HufqOzm43kB4k" alt=""style="height: auto;">
+                </p>
+                <p>Penjelasan = ini tampilan data customer dibagian admin.tampilan data registrasi dari customer dan bisa dilihat oleh admin. Jika di klik button tambah data maka berproses di form_customer dan data tersebut dipilih dari data customer database.</p>
+                <p>
+                    Data kategori <br>
+                    <img src="https://drive.google.com/uc?id=1HMC_bevw5LOopsgrPMOUBXDSyyp4D4gn" alt=""style="height: auto;">
+                </p>
+                <p>
+                    Code <br>
+                    <img src="https://drive.google.com/uc?id=1HNDrE_Dxj57E6QYv3bf-DQrj_cC3Pz0L" alt=""style="height: auto;">
+                </p>
+                <p>Penjelasan : ini adalah tampilan tabel kategori . dan datanya diambil dari form_kategori.php dan ditampilkan di table kategori.php. dan table databasenya dipilih di kategori.</p>
+                <p>
+                    Data Penerbit <br>
+                    <img src="https://drive.google.com/uc?id=1kz1F5NlzeLHv4wuzTXcNF1DLoBhS4Y7p" alt=""style="height: auto;">
+                </p>
+                <p>
+                    Code <br>
+                    <img src="https://drive.google.com/uc?id=1jaDMp7GCM55HhHip2QK1IxUu45g4S8sq" alt=""style="height: auto;">
+                </p>
+                <p>Penjelasan: Data yang telah diinput akan masuk di form_penerbit  di table_penerbit , table penerbit berisi tentang ID penerbit,Nama,Alamat,Email,No telp.</p>
+                <p>
+                    Data transaksi <br>
+                    <img src="https://drive.google.com/uc?id=1b9Vv8MKoQsIUjckxEzPIpV0SC4XqEA4J" alt=""style="height: auto;">
+                </p>
+                <p>
+                    Code <br>
+                    <img src="https://drive.google.com/uc?id=1mfXNFCuK5d9iHQTN9fM4qOA4BLAzbrnw" alt=""style="height: auto;">
+                </p>
+                <p>Penjelasan:ini adalah data transaksi,, jika salah penginputan maka muncul message error, dan di transaksi berisi tentang ID Transaksi,Nama customer,Judul Buku,Tanggal transaksi,Jumlah,Total.</p>
+                <p>
+                    Data User <br>
+                    <img src="https://drive.google.com/uc?id=1IlatUsMpyW4XLt4egIzlFxjXh43rXLAs" alt=""style="height: auto;">
+                </p>
+                <p>
+                    Code <br>
+                    <img src="https://drive.google.com/uc?id=1B7OvwFRxzHtC5GlGyMrnlj5WjuOgUJBd" alt=""style="height: auto;">
+                </p>
+                <p>Penjelasan: jika menambahkan data , maka datanya masuk di form_user Dan querynya memilih di tabel user jika memilih tipe usernya customer dan melihat datanya berdasarkan id customer </p>
+                <p>
+                    Data Pengarang <br>
+                    <img src="https://drive.google.com/uc?id=1Ie3N1FTB6XQadAEAiQkksljclNtJLvHv" alt=""style="height: auto;">
+                </p>
+                <p>
+                    Code <br>
+                    <img src="https://drive.google.com/uc?id=1TjPutxJxEFPH547dc07C9pv9LFbpiJDI" alt=""style="height: auto;">
+                </p>
+                <p>Penjelasan : Data yang telah diinput akan masuk di form_pengarang  di table_pengarang , table penerbit berisi tentang ID penerbit,Nama,Alamat,Email,No telp.</p>
+                <h3>Test</h3>
+                <p>Dalam tahap penguijan ini kami menggunakan metode pengujian blackbox berikut hasil dari pengujian black box  : </p>
+                <img src="https://drive.google.com/uc?id=1gP8rv9gE7Odl4Bfhjg0CAq7rOccmROk5" alt="" style="height: auto;"> 
+                <img src="https://drive.google.com/uc?id=186syR_5aDIiWVBJ8oBukgMezNhLf5c2r" alt="" style="width: 85%; height: auto;"> 
+                <img src="https://drive.google.com/uc?id=1ucca8fWHrvPv0Lga3eMmtRgs3Qy2F8c-" alt="" style="width: 72%; height: auto;" >
 </body>
 </html>
